@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruvi's Journal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌟 Dhruvi’s Journal 🌟</h1>
+        <p class="quote">"Every star shines differently, and so do you!"</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#prompts">Daily Prompts</a></li>
+            <li><a href="#gratitude">Gratitude</a></li>
+            <li><a href="#affirmations">Affirmations</a></li>
+            <li><a href="#about">About Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="journal">
+        <h2>📖 Journal Entry</h2>
+        <input type="date" id="entry-date">
+        <textarea id="journal-entry" placeholder="Write about your day..."></textarea>
+        <button onclick="saveJournal()">Save Entry</button>
+        <p id="saved-message" class="hidden">✔ Entry Saved!</p>
+    </section>
+
+    <section id="prompts">
+        <h2>📝 Daily Prompts</h2>
+        <button onclick="getPrompt()">Get a Random Prompt</button>
+        <p id="prompt-display">Click the button to get a new prompt!</p>
+    </section>
+
+    <section id="gratitude">
+        <h2>💖 Gratitude Log</h2>
+        <textarea id="gratitude-entry" placeholder="Write 3 things you’re grateful for..."></textarea>
+        <button onclick="saveGratitude()">Save Gratitude</button>
+    </section>
+
+    <section id="affirmations">
+        <h2>🌟 Daily Affirmations</h2>
+        <textarea id="affirmation-entry" placeholder="Write a positive affirmation..."></textarea>
+        <button onclick="saveAffirmation()">Save Affirmation</button>
+    </section>
+
+    <section id="about">
+        <h2>💫 About Me</h2>
+        <p>Welcome to my personal journal! Here, I reflect, heal, and grow every day.</p>
+    </section>
+
+    <footer>
+        <p>✨ You are magical, Dhruvi ✨</p>
+    </footer>
+</body>
+</html>
