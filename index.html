@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruvi's Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dhruvi's Journal</h1>
+        <p id="random-quote">"Believe in your own magic!"</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#gratitude">Gratitude</a></li>
+            <li><a href="#affirmations">Affirmations</a></li>
+            <li><a href="#prompts">Daily Prompts</a></li>
+            <li><a href="#learning">Learning Tracker</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="journal">
+            <h2>Journal Entry</h2>
+            <input type="date" id="entry-date">
+            <textarea id="journal-entry" placeholder="Write about your day..."></textarea>
+            <button onclick="saveEntry()">Save Entry</button>
+            <div id="past-entries"></div>
+        </section>
+
+        <section id="gratitude">
+            <h2>Gratitude Log</h2>
+            <textarea id="gratitude-entry" placeholder="Write 3 things you're grateful for..."></textarea>
+            <button onclick="saveGratitude()">Save</button>
+            <div id="past-gratitude"></div>
+        </section>
+
+        <section id="affirmations">
+            <h2>Daily Affirmations</h2>
+            <textarea id="affirmation-entry" placeholder="Write a positive affirmation..."></textarea>
+            <button onclick="saveAffirmation()">Save</button>
+            <div id="past-affirmations"></div>
+        </section>
+
+        <section id="prompts">
+            <h2>Daily Prompts & Shadow Work</h2>
+            <p id="daily-prompt">Click below for a random prompt.</p>
+            <button onclick="generatePrompt()">New Prompt</button>
+            <textarea id="prompt-response" placeholder="Write your answer here..."></textarea>
+            <button onclick="savePrompt()">Save</button>
+            <div id="past-prompts"></div>
+        </section>
+
+        <section id="learning">
+            <h2>Learning & To-Do Tracker</h2>
+            <ul>
+                <li><input type="checkbox" id="study"> Study</li>
+                <li><input type="checkbox" id="exercise"> Exercise</li>
+                <li><input type="checkbox" id="reading"> Reading</li>
+                <li><input type="checkbox" id="skincare"> Skincare</li>
+            </ul>
+            <button onclick="saveToDo()">Save Progress</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
